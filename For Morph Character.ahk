@@ -28,7 +28,15 @@ Loop
 If (GetKeyState("End")){  ;Edit this one too
   Break
   }
-  
+
+F::
+Loop, 20
+{
+  Send, f
+  Sleep, 50
+}
+Return
+
 SetTimer, Stopper  ;This also doesnt work, better end the loop first before alt tab-ing or quit genshin
 }
 Return

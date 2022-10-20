@@ -31,6 +31,14 @@ SetTimer, Stopper  ;This also doesnt work, better end the loop first before alt 
 }
 Return
 
+F::
+Loop, 20
+{
+  Send, f
+  Sleep, 50
+}
+Return
+
 Stopper:
  WinGet, app, ProcessName, A
  if app = GenshinImpact.exe
